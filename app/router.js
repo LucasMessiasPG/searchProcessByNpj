@@ -1,11 +1,6 @@
 const path = require("path");
 const fs = require("fs");
 const controller = {};
-const GET = "get";
-const POST = "post";
-const PUT = "put";
-const PATCH = "patch";
-const DELETE = "delete";
 
 // ger controllers
 const files = fs.readdirSync(path.resolve(__dirname+"/controllers"));
