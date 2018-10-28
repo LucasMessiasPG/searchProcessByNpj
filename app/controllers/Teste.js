@@ -19,6 +19,6 @@ class Teste{
     }
 }
 
-SQS.watch(ENV.aws.sqs.queue.npj, Teste.handleSqs);
+// SQS.watch(ENV.aws.sqs.queue.npj, Teste.handleSqs);
 
 module.exports = Teste;

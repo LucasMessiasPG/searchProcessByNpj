@@ -13,7 +13,10 @@ for(let file of files){
 
 // list routes
 function routes(app){
-    app.get("/", controller.Teste.teste2);
+    controller.Process.processFiles();
+    app.get("/api/process-files", controller.Process.processFiles);
+    app.get("/api/process", controller.Process.get);
+    app.post("/api/update", controller.Process.update);
     return app;
 }
 

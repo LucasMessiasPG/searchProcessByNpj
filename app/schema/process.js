@@ -7,7 +7,43 @@ const NAME = "process";
 
 // schema collection
 const SCHEMA = {
-    npj: String
+    status: String,
+    cnj: String,
+    cnjUnformatted: String,
+    themis: String,
+    themisUnformatted: String,
+    legalScrect: Boolean,
+    location: {
+        city: String,
+        state: String,
+        place: String
+    },
+    proposedDate: String,
+    situationDescription: String,
+    situation: String,
+    volume: String,
+    amointSheets: String,
+    parties: {
+        author: {
+            name: String,
+            adv: {
+                name: String,
+                oab: String
+            }
+        },
+        defendant: {
+            name: String,
+            adv: {
+                name: String,
+                oab: String
+            }
+        }
+    },
+    history: [{
+        date: String,
+        description: String
+    }],
+    raw: Schema.Types.Mixed 
 };
 
 // exports
