@@ -8,8 +8,8 @@ const NAME = "process";
 // schema collection
 const SCHEMA = {
     status: String,
-    cnj: String,
-    cnjUnformatted: String,
+    npj: String,
+    npjUnformatted: String,
     themis: String,
     themisUnformatted: String,
     legalScrect: Boolean,
